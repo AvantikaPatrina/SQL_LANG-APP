@@ -10,7 +10,7 @@ import sqlite3
 from langchain_groq import ChatGroq
 
 # Set up page config
-st.set_page_config(page_title="LangChain: Chat with SQL DB", page_icon="🦜")
+st.set_page_config(page_title="AI SQL Assistant", page_icon="🦜")
 st.title("🦜 LangChain: Chat with SQL DB")
 
 # Database selection
