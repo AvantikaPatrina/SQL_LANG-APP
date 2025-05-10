@@ -37,7 +37,7 @@ if not db_uri:
 
 if not api_key:
     st.info("Please add the Groq API key")
-    st.error("❌ Missing Groq API Key. Please provide it in the sidebar or set it via Streamlit Secrets.")
+    st.error("❌ Missing Groq API Key. Please provide it in the sidebar")
     st.stop()
 
 ## LLM model
