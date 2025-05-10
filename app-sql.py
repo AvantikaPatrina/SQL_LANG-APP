@@ -37,6 +37,8 @@ if not db_uri:
 
 if not api_key:
     st.info("Please add the Groq API key")
+    st.error("❌ Missing Groq API Key. Please provide it in the sidebar or set it via Streamlit Secrets.")
+    st.stop()
 
 ## LLM model
 llm = ChatGroq(groq_api_key=api_key, model_name="Llama3-8b-8192", streaming=True)
